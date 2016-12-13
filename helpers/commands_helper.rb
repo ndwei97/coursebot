@@ -31,7 +31,7 @@ module Sinatra
         
       # Hi Commands
       if ["hi", "hey", "hello"].any? { |w| event.formatted_text.starts_with? w }
-        client.chat_postMessage(channel: event.channel, text: "Hi I'm CourseBot. I'm here to help.", as_user: true)
+        client.chat_postMessage(channel: event.channel, text: "Hi I'm PicBot. I'm here to help.", as_user: true)
 
         # Handle the Help commands
       elsif event.formatted_text.include? "help"
